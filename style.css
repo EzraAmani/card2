@@ -1,0 +1,185 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    :root {
+        --bg: #FFF8F0;
+        --bg2hover: #E2E2E5;
+        --card-bg: #ffffff;
+        --border: #541A1A;
+        --text-primary: #093C5D;
+        --new-text-primary: #1a1a1a;
+        --text-secondary: #2C3947;
+        --new-text-secondary: #808080;
+        --text-placeholder: #294669;
+        --accent: #C4E2F5;
+        --accent-hover: #1591DC;
+        --accent-light: #C9CAAC;
+        --danger: #C44545;
+        --radius-sm: 8px;
+        --radius-md: 30px;
+        --radius-lg: 50px;
+        --shadow-card: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        --transition: 0.2s ease;
+
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: var(--bg);
+
+
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        color: var(--text-primary);
+        padding: 40px 16px;
+
+    }
+
+    .page-wrapper {
+        /* height: 100vh; */
+        max-width: 920px;
+        margin: 0 auto;
+
+    }
+
+    .cards-container {
+        /* position: relative; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+        border-radius: var(--radius-md);
+    }
+
+    .card {
+        background: var(--card-bg);
+        border-radius: var(--radius-md);
+        padding: 5px;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        /* border: 1px solid var(--border) */
+        margin: 0 auto;
+        transform: opacity 0.25s ease, transform 0.25s ease;
+        width: 240px;
+    }
+
+    .card img {
+        height: 200px;
+        width: 230px;
+        object-fit: cover;
+        border-radius: var(--radius-md);
+
+    }
+
+    .card p {
+        font-size: 14px;
+        color: var(--new-text-secondary);
+        padding-left: 20px;
+        /* background-color: red; */
+        align-items: center;
+
+    }
+
+    #card-content {
+        margin-top: 6px;
+        /* background-color: red; */
+    }
+
+    .user-identity {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        /* Centers horizontally */
+        gap: 7px;
+        padding-left: 20px;
+        margin-top: 6px;
+    }
+
+    .user-identity svg {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        right: 0px;
+        top: 5px;
+        color: green;
+    }
+
+    .user-identity h1 {
+        font-size: 20px;
+        color: var(--new-text-primary);
+        font-weight: 505;
+
+    }
+
+    .card-footer {
+        display: flex;
+        margin-top: 5px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 12px 20px;
+        background-color: transparent;
+    }
+
+    .card-stats {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .stat-item .icon {
+        width: 15px;
+        height: 15px;
+        color: var(--new-text-secondary);
+    }
+
+    .stat-number {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--new-text-primary);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .btn-follow {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        background-color: #F0F0F2;
+        /* color: #1A1A1A; */
+        font-size: 14px;
+        color: var(--new-text-primary);
+        font-weight: 500;
+        font-family: inherit;
+        padding: 10px 17px;
+        border-radius: 24px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .btn-follow:hover {
+        background-color: var(--bg2hover);
+    }
+
+    .btn-plus {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+    }
